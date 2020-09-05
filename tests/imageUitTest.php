@@ -27,7 +27,7 @@ class ImageUnitTest extends TestCase
      */
     public function testCreateWithDataProvider(
         string $expected, // <-- What do you expect the result to be?
-        string $actual // <--What should be the result? (in other words this is the response)
+        string $actual // <--What should be the result?
     ) {
         $CreateImageResponse = new CreateImageResponse();
         $CreateImageResponse->image = $expected;
