@@ -26,8 +26,8 @@ class ImageUnitTest extends TestCase
      * @dataProvider provideCreate
      */
     public function testCreateWithDataProvider(
-        string $expected, // <-- What do you expect the result to be?
-        string $actual // <--What should be the result?
+        string $expected,
+        string $actual
     ) {
         $CreateImageResponse = new CreateImageResponse();
         $CreateImageResponse->image = $expected;
@@ -48,7 +48,7 @@ class ImageUnitTest extends TestCase
     }
 
     /**
-     * return string[][]      // <-- this is method return array
+     * return string[][]     
      */
     public function provideCreate()
     {
