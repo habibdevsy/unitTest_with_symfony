@@ -85,3 +85,15 @@ Time: 453 ms, Memory: 6.00 MB
 
 [30;42mOK (3 tests, 3 assertions)[0m
 ```
+### Documentation (TestDox)
+you can use PHPUnit's TestDox functionality to generate automated documentation for your project based on its tests as follows:
+
+1- Create a file named "doc.php" inside the tests folder
+
+2- in command line write : 
+
+ ```
+ php bin/phpunit --testdox-html tests/doc.html
+ 
+```
+You will get formatted HTML code to contain your test results.
