@@ -33,6 +33,8 @@ First we need to isolate the unit to be tested
 With it we spoof the connection to the database and also spoof any external resources we need inside the unit.
 
 #### The test function
+
+The function name should begin with ( test)
 ```
 function testCreateWithDataProvider( $expected, $actual)
  ```
