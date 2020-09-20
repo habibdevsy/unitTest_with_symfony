@@ -6,7 +6,11 @@ Tip (if your code is not testable, change the way the code is written so that it
 - composer require --dev symfony/phpunit-bridge
 
  Write the command to run the test in the command line
- php bin / phpunit  You must see this name "Sebastian Bergmann and contributors" for things to be fine
+ ```
+ php bin / phpunit 
+ ```
+ You must see this name "Sebastian Bergmann and contributors" for things to be fine.
+ 
  ## structure
       -- tests
  
@@ -30,14 +34,14 @@ With it we spoof the connection to the database and also spoof any external reso
 
 #### The test function
 ```
-function testCreateWithDataProvider( $expected, $actual)    )
+function testCreateWithDataProvider( $expected, $actual)
  ```
  It receives two parameters from the data provider, and through assertEquals it performs unit tests if the inputs match the output, the result is correct
  ```
  assertEquals( $expected, $actual)
  ```
 ##### setUp()
-Function that works before the test,Therefore, I will mock the manger and inherit the automapping within it so that I do not need to repeat that.
+Function that works before the test,Therefore, I will mock the Manager and inherit the automapping within it so that I do not need to repeat that.
 
 
 #### Data Providers 
@@ -47,7 +51,7 @@ Data Providers is a useful feature in PHPUnit It allows you to run the same test
      * @dataProvider provideCreate
      */
 ```
-You wrote a data service provider in a file "values.php" 
+You wrote a data provider in a file "values.php" 
 ```
 public function provideCreate(): array
 
@@ -68,7 +72,7 @@ public function provideCreate()
     }
 ```
 
-#### to run the test
+## to run the test
 
 ```
 php bin / phpunit
@@ -85,7 +89,7 @@ Time: 453 ms, Memory: 6.00 MB
 
 [30;42mOK (3 tests, 3 assertions)[0m
 ```
-### Documentation (TestDox)
+## Documentation (TestDox)
 you can use PHPUnit's TestDox functionality to generate automated documentation for your project based on its tests as follows:
 
 1- Create a file named "doc.php" inside the tests folder
@@ -97,3 +101,10 @@ you can use PHPUnit's TestDox functionality to generate automated documentation 
  
 ```
 You will get formatted HTML code to contain your test results.
+
+## References
+https://phpunit.de/
+
+https://symfony.com/doc/current/testing.html
+
+https://blog.martinhujer.cz/how-to-use-data-providers-in-phpunit/
