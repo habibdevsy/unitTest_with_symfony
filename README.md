@@ -11,7 +11,7 @@ Tip (if your code is not testable, change the way the code is written so that it
  ```
  You must see this name "Sebastian Bergmann and contributors" for things to be fine.
  
- ## structure
+ ## Structure
       -- tests
  
             -- imageUnitTest.php
