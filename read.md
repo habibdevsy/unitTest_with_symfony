@@ -8,7 +8,7 @@ With unit testing we test each component of the code individually.
 The importance of unit testing is that it guides you to a small mistake that causes problems in the future, thus saving you time and effort.
 Tip (if your code is not testable, change the way the code is written so that it is testable).
 
-## Difficult؟
+## Difficult?
 Writing tests can be difficult, and writing good tests can be more difficult. This topic will be important to you in the long run.
 
 ## Requirements
@@ -20,20 +20,20 @@ We’re using the --dev flag as we only need this installed for our dev environm
 Write the command to run the test in the command line:
  
  ```
- php bin / phpunit 
+ php bin/phpunit 
  ```
  You must see this name "Sebastian Bergmann and contributors" for things to be fine.
  
  ## Structure
       -- tests
  
-            -- imageUnitTest.php
+            -- fileUnitTest.php
             
             -- fixtures
             
                 -- values.php
                 
-   In the file "imageUnitTest.php" we write the tests.
+   In the file "fileUnitTest.php" we write the tests.
    
    "Fixture" folder containing "Values.php" file Contains the expected and actual values that will determine the test result, In other words, the values.php file is the Provider Data.
    
@@ -103,7 +103,7 @@ public function provideCreate()
 ## to run the test
 
 ```
-php bin / phpunit
+php bin/phpunit
 ```
 You should get
 ```
