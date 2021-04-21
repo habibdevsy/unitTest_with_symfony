@@ -50,11 +50,11 @@ We need to test a unit that connects to the database, but we don't want to test 
 #### Assertions
 The way we actually test our code is by using PHPUnit’s assertion methods:
 ```
-assertEmpty($result)
-assertEquals($expected, $result)
-assertTrue($result)
-assertFalse($result)
-assertInstanceOf($expected, $result)
+assertEmpty($actual)
+assertEquals($expected, $actual)
+assertTrue($actual)
+assertFalse($actual)
+assertInstanceOf($expected, $actual)
 ```
 You will find full documentation on the site : https://phpunit.de/manual/current/en/appendixes.assertions.html
 
